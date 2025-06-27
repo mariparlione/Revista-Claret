@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CLARET - Página 1</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Text:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="revista-abierta">
+        <section class="pagina interior izquierda">
+            <div class="bloque-protector">
+                <p>Este verano <br> </p>
+                <h2 class="membrete">¡PROTEGE TU PIEL!</h2>
+            </div>
+        </section>
+
+        <section class="pagina interior derecha">
+            <div class="contenido-intro">
+                <h2 class="titulo-seccion">Conclusión</h2>
+                <p>
+                    La moda de verano no solo se trata de tendencias, colores y maquillaje, sino de sentirnos cómodas,
+                    libres y auténticas. Esta temporada es una invitación a explorar tu estilo, jugar con lo esencial y
+                    resaltar tu belleza natural.
+
+                    Desde looks frescos hasta consejos prácticos, esta edición fue creada para inspirarte a vivir el
+                    verano con confianza, creatividad y mucho estilo.
+                </p>
+                <p>
+                    Recuerda: la mejor prenda que puedes llevar es tu actitud.<br>
+                    <strong>¡Nos vemos en la próxima edición de CLARET!</strong>
+                </p>
+            </div>
+        </section>
+        <a href="pagina5.html" class="flecha-izquierda" onclick="pasarPagina()">&#10148;</a>
+        <a href="pagina7.html" class="flecha-derecha" onclick="pasarPagina()">&#10148;</a>
+
+        <script>
+            function pasarPagina(destino) {
+                const revista = document.querySelector('.revista');
+                revista.classList.add('pasando');
+
+                setTimeout(() => {
+                    window.location.href = destino;
+                }, 600); // espera la duración de la animación
+            }
+        </script>
+    </div>
+</body>
+
+</html>

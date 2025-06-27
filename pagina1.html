@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CLARET - Página 1</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="revista-abierta">
+        <!-- Página izquierda: Editorial -->
+        <section class="pagina interior izquierda">
+            <div class="cuadro-editorial">
+                <h2 class="titulo-editorial">Editorial</h2>
+                <p class="texto-editorial">
+                    Bienvenida a la edición primavera-verano de <strong>CLARET</strong>, una celebración de estilo,
+                    frescura y autenticidad. En cada página encontrarás inspiración para redescubrir tu esencia a través
+                    de la moda, reconectar con lo esencial y brillar con confianza.
+                </p>
+                <p class="texto-editorial">
+                    Esta edición honra los básicos reinventados, los detalles naturales y la libertad de expresión
+                    personal. Gracias por acompañarnos en esta travesía visual. Esta no es solo una revista, es un
+                    manifiesto de temporada.
+                </p>
+                <p class="firma-editorial">— María Parlione</p>
+            </div>
+        </section>
+
+        <section class="pagina interior derecha">
+            <div class="contenido-intro">
+                <h2 class="titulo-seccion">Introducción</h2>
+                <p>
+                    Te damos la bienvenida a una edición especial pensada para acompañarte en la temporada más vibrante
+                    del año. Colores vivos, texturas suaves y siluetas naturales se convierten en protagonistas de este
+                    verano.
+                </p>
+                <p>
+                    Hemos seleccionado lo mejor en moda, maquillaje y estilo de vida para que encuentres inspiración y
+                    disfrutes cada momento bajo el sol. <br><br><strong>¡Prepárate para una experiencia fresca, ligera y
+                        totalmente
+                        CLARET!</strong>
+
+                </p>
+            </div>
+        </section>
+
+
+        <a href="index.html" class="flecha-izquierda" onclick="pasarPagina()">&#10148;</a>
+        <a href="pagina2.html" class="flecha-derecha" onclick="pasarPagina()">&#10148;</a>
+
+        </section>
+    </div>
+
+    <script>
+        function pasarPagina(destino) {
+            const revista = document.querySelector('.revista');
+            revista.classList.add('pasando');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 600); // espera la duración de la animación
+        }
+    </script>
+</body>
+
+</html>

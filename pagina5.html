@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CLARET - Página 1</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Text:ital@0;1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="revista-abierta">
+        <section class="pagina interior izquierda">
+            <div class="bloque">
+                <p>¡Maquillaje ligero, <br> </p>
+                <h2 class="membrete">verano radiante!</h2>
+            </div>
+        </section>
+
+        <section class="pagina interior derecha">
+            <div class="maquillaje">
+                <h2 class="titulo-maquillaje">Guía de maquillaje <br> para un verano radiante</h2>
+                <p class="texto">Maquillaje que se siente como el sol: suave, cálido y brillante.</p>
+
+                <div class="grid-maquillaje">
+                    <div class="card-maquillaje">
+                        <h3 class="paso-numero">1</h3>
+                        <p class="paso-desc"><strong>Piel ligera:<br></strong> Usa hidratantes con color o BB Creams.
+                        </p>
+                    </div>
+                    <div class="card-maquillaje">
+                        <h3 class="paso-numero">2</h3>
+                        <p class="paso-desc"><strong>Iluminador:<br></strong> Aporta un brillo sutil en puntos clave del
+                            rostro.
+                        </p>
+                    </div>
+                    <div class="card-maquillaje">
+                        <h3 class="paso-numero">3</h3>
+                        <p class="paso-desc"><strong>Sombras cálidas:<br></strong> Coral, bronce o melocotón para los
+                            párpados.
+                        </p>
+                    </div>
+                    <div class="card-maquillaje">
+                        <h3 class="paso-numero">4</h3>
+                        <p class="paso-desc"><strong>Labios jugosos:<br></strong> Bálsamos o gloss con tonos frutales.
+                        </p>
+                    </div>
+                    <div class="card-maquillaje">
+                        <h3 class="paso-numero">5</h3>
+                        <p class="paso-desc"><strong>Cejas naturales:<br></strong> Péinalas con gel transparente y un
+                            toque de sombra.</p>
+                    </div>
+                    <div class="card-maquillaje">
+                        <h3 class="paso-numero">6</h3>
+                        <p class="paso-desc"><strong>Fijador:<br></strong> Usa brumas para mantener el maquillaje fresco
+                            todo el
+                            día.</p>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <a href="pagina4.html" class="flecha-izquierda" onclick="pasarPagina()">&#10148;</a>
+    <a href="pagina6.html" class="flecha-derecha" onclick="pasarPagina()">&#10148;</a>
+
+    <script>
+        function pasarPagina(destino) {
+            const revista = document.querySelector('.revista');
+            revista.classList.add('pasando');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 600); // espera la duración de la animación
+        }
+    </script>
+    </div>
+</body>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variedades</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="portada-revista">
+        <div class="marco-revista" id="portadaCaja">
+        </div>
+    </section>
+    <a href="pagina6.html" class="flecha-izquierda" onclick="pasarPagina()">&#10148;</a>
+
+    <script>
+        function pasarPagina(destino) {
+            const revista = document.querySelector('.revista');
+            revista.classList.add('pasando');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 600); // espera la duración de la animación
+        }
+    </script>
+</body>
+
+</html>

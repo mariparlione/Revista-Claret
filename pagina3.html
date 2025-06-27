@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CLARET - Página 1</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Meow+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="revista-abierta">
+        <section class="pagina interior izquierda">
+            <div class="contenido-claves">
+                <div class="titulo-claves">
+                    <span class="numero-grande">5</span>
+                    <h2 class="titulo-texto">claves para destacar con básicos</h2>
+                     
+                </div>
+
+                <div class="lista-claves ">
+                    <p class="texto">No todo es bikini, lo básico también tiene protagonismo.
+                </p>
+                    <div class="clave">
+                        <h3>1. Silueta impecable</h3>
+                        <p>Las prendas deben ajustarse bien a tu cuerpo. El fit lo es todo.</p>
+                    </div>
+                    <div class="clave">
+                        <h3>2. Juega con capas</h3>
+                        <p>Un blazer, camisa abierta o chaleco elevan cualquier look.</p>
+                    </div>
+                    <div class="clave">
+                        <h3>3. Accesorios con intención</h3>
+                        <p>Collares, cinturones o bolsos le dan personalidad a tu outfit.</p>
+                    </div>
+                    <div class="clave">
+                        <h3>4. Zapatos que hablen</h3>
+                        <p>Unos zapatos llamativos transforman un conjunto básico.</p>
+                    </div>
+                    <div class="clave">
+                        <h3>5. Colores neutros</h3>
+                        <p>Beige, blanco y gris bien combinados nunca fallan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagina interior derecha">
+        </section>
+
+            <a href="pagina2.html" class="flecha-izquierda" onclick="pasarPagina()">&#10148;</a>
+            <a href="pagina4.html" class="flecha-derecha" onclick="pasarPagina()">&#10148;</a>
+
+    </div>
+
+    <script>
+        function pasarPagina(destino) {
+            const revista = document.querySelector('.revista');
+            revista.classList.add('pasando');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 600); // espera la duración de la animación
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* Fuente base */
+body {
+    margin: 0;
+    background-color: #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Portada centrada en pantalla */
+.portada-revista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: transform 0.6s ease-in-out;
+    transform-origin: left center;
+}
+
+.revista.pasando {
+    transform: rotateY(-90deg);
+    /* Simula que gira la hoja */
+    opacity: 0;
+}
+
+
+/* Marco tipo revista */
+.marco-revista {
+    width: 490px;
+    height: 600px;
+    box-shadow: 0 0 30px rgba(250, 249, 249, 0.2);
+    padding: 30px 25px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+
+    /* Fondo: imagen de portada */
+    background: url('imagenes/portada2.jpg') no-repeat center center/cover;
+}
+
+/* Capa oscura sobre imagen pero detrás del contenido */
+.marco-revista::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(252, 243, 241, 0.103);
+    /* Ajusta opacidad aquí */
+    z-index: 0;
+}
+
+/* Todo el contenido queda encima de la capa oscura */
+.marco-revista * {
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* sombra sutil */
+
+}
+
+.membrete {
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 0.9;
+}
+
+.eslogan {
+    font-size: 0.9rem;
+    color: #264653;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 0 8px;
+    letter-spacing: 1px;
+}
+
+.titulo {
+    font-size: 4.5rem;
+    margin: 0;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: #e63946;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.edicion {
+    font-style: italic;
+    margin: 8px 0 0;
+    font-size: 0.9rem;
+    color: #0e4749;
+}
+
+/* Bloques de contenido posicionados */
+.contenido1 {
+    position: absolute;
+    top: 185px;
+    right: 18px;
+    font-size: 0.85rem;
+    text-align: right;
+    color: #f1faee;
+    line-height: 0.9;
+}
+
+.contenido2 {
+    position: absolute;
+    top: 250px;
+    left: 18px;
+    font-size: 0.85rem;
+    text-align: left;
+    color: #06d6a0;
+    line-height: 0.9;
+}
+
+.tips {
+    position: absolute;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #f1faee;
+}
+
+.contenido3 {
+    position: absolute;
+    top: 330px;
+    right: 18px;
+    font-size: 0.85rem;
+    text-align: right;
+    line-height: 0.9;
+}
+
+/* Estilo de texto en cursiva fina */
+.fino {
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.rosa {
+    color: #e63946;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+
+
+/* Parte inferior */
+.contenido-inferior {
+    position: absolute;
+    top: 420px;
+    left: 25px;
+    text-align: left;
+    line-height: 0.8;
+
+}
+
+.sub {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 55px;
+    color: #e63946;
+}
+
+.verano {
+    font-size: 85px;
+    color: #06d6a0;
+    font-style: italic;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/*flecha*/
+.flecha-izquierda,
+.flecha-derecha {
+    position: fixed;
+    bottom: 40px;
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: #f45d48;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
+    z-index: 10;
+}
+
+.flecha-derecha {
+    right: 40px;
+}
+
+.flecha-izquierda {
+    left: 40px;
+    transform: rotate(180deg);
+    /* Rota la flecha a la izquierda */
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CLARET - Página 1</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Meow+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="revista-abierta">
+        <section class="pagina interior izquierda">
+            <div class="indice-contenedor">
+                <h2 class="titulo-indice">Contenido</h2>
+
+                <ul class="lista-indice">
+                    <li>¡Bienvenido Verano! </li>
+                    <li> 5 claves para destacar con básicos </li>
+                    <li>Tendencias para la temporada 2025</li>
+                    <li>Guía de maquillaje para verano</li>
+                </ul>
+            </div>
+            <div class="collage-imagenes">
+                <img src="imagenes/collage1.jpg" alt="Editorial 1">
+                <img src="imagenes/collage2.png" alt="Editorial 2">
+                <img src="imagenes/collage3.jpg" alt="Editorial 3">
+                <img src="imagenes/collage4.jpg" alt="Editorial 4">
+            </div>
+        </section>
+
+        <section class="pagina interior derecha">
+            <div class="contenido-verano">
+                <h2 class="verano">¡Dale la bienvenida al verano!</h2>
+                <p class="bienvenida-texto">8 esenciales para disfrutar al máximo la temporada:
+                </p>
+                <div class="tips-verano-numerados">
+                    <div class="tip-item">
+                        <span class="numero-tip">1</span>
+                        <p>Usa telas ligeras como lino o algodón.</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="numero-tip">2</span>
+                        <p>Atrévete a usar colores vivos.</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="numero-tip">3</span>
+                        <p>Siempre protege tu piel.</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="numero-tip">4</span>
+                        <p>Lentes grandes y sombreros.</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="numero-tip">5</span>
+                        <p>Menos es más: looks simples</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="numero-tip">6</span>
+                        <p>Hidrátate constantemente.</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="numero-tip">7</span>
+                        <p>Maquillaje natural y fresco.</p>
+                    </div>
+                    <div class="tip-item">
+                        <span class="numero-tip">8</span>
+                        <p>Disfruta el momento.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+    </div>
+    <a href="pagina1.html" class="flecha-izquierda" onclick="pasarPagina()">&#10148;</a>
+    <a href="pagina3.html" class="flecha-derecha" onclick="pasarPagina()">&#10148;</a>
+
+    </div>
+
+    <script>
+        function pasarPagina(destino) {
+            const revista = document.querySelector('.revista');
+            revista.classList.add('pasando');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 600); // espera la duración de la animación
+        }
+    </script>
+    </div>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CLARET - Página 1</title>
+    <link rel="stylesheet" href="style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Meow+Script&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="revista-abierta">
+        <section class="pagina interior izquierda">
+            <div class="contenido-tendencias">
+                <h2 class="tendencias">Verano 2025</h2>
+                <p class="texto">Colores, texturas y actitud para una temporada inolvidable.
+                </p>
+                <div class="bloque-intro">
+                    <div class="intro-tendencia">
+                        <div class="texto-intro">
+                            <p>
+                                Esta temporada se trata de expresarte con libertad, autenticidad y confianza. Las reglas
+                                se
+                                relajan para darle paso a un estilo más personal, cómodo y lleno de energía. Los básicos
+                                se
+                                reinventan con cortes inesperados, siluetas relajadas y combinaciones audaces que
+                                celebran
+                                la individualidad.
+                                <br><br>
+                                El verano 2025 está cargado de colores vibrantes, texturas frescas y una clara
+                                inclinación
+                                hacia lo natural, lo fluido y lo chic. Es un momento para jugar con contrastes, para
+                                atreverse con accesorios llamativos, tejidos artesanales y propuestas que combinan lo
+                                clásico con lo vanguardista.
+                                <br><br>
+                                <strong>¡Explora, combina y luce lo que te haga sentir bien! Porque este verano se trata
+                                    de
+                                    disfrutar cada look tanto como cada momento.</strong>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="pagina interior derecha">
+            <div class="galeria-tendencias">
+                <!-- Fila 1 -->
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia1.jpg" alt="Coral intenso" />
+                    <p><strong>Coral intenso:</strong><br> El favorito del verano.</p>
+                </div>
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia2.jpg" alt="Crochet" />
+                    <p><strong>Crochet:</strong><br> Fresco, ligero y femenino.</p>
+                </div>
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia3.jpg" alt="Accesorios" />
+                    <p>Sombreros XXL y gafas atrevidas.</p>
+                </div>
+
+                <!-- Fila 2 -->
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia4.jpg" alt="Look monocromático" />
+                    <p><strong>Monocromía:</strong><br> Minimalismo que impacta.</p>
+                </div>
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia5.jpg" alt="Denim claro" />
+                    <p><strong>Denim suave:</strong><br> Clásico de temporada.</p>
+                </div>
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia6.jpg" alt="Sandalias trenzadas" />
+                    <p><strong>Sandalias:</strong><br> Trenzadas y cómodas.</p>
+                </div>
+
+                <!-- Fila 3 -->
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia7.jpg" alt="Vestidos fluidos" />
+                    <p><strong>Vestidos fluidos:</strong><br> Movimiento y frescura.</p>
+                </div>
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia8.jpg" alt="Colores pasteles" />
+                    <p><strong>Bikinis:</strong><br> Coloridos y extravagantes.</p>
+                </div>
+                <div class="bloque-galeria">
+                    <img src="imagenes/tendencia9.jpg" alt="Bolsos tejidos" />
+                    <p><strong>Bolsos:</strong><br> Tejidos artesanales.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <a href="pagina3.html" class="flecha-izquierda" onclick="pasarPagina()">&#10148;</a>
+        <a href="pagina5.html" class="flecha-derecha" onclick="pasarPagina()">&#10148;</a>
+
+    </div>
+
+    <script>
+        function pasarPagina(destino) {
+            const revista = document.querySelector('.revista');
+            revista.classList.add('pasando');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 600); // espera la duración de la animación
+        }
+    </script>
+</body>
+
+</html>

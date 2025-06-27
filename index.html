@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variedades</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="portada-revista">
+        <div class="marco-revista" id="portadaCaja">
+            <div class="membrete">
+                <p class="eslogan">El verano comienza con estilo</p>
+                <h1 class="titulo">C L A R E T</h1>
+                <p class="edicion">Edición especial: Primavera - Verano</p>
+            </div>
+
+            <div class="contenido1">
+                <h2> <span class="rosa"><strong> 5 claves</strong> </span> <span class="fino"> <br> para destacar <br>
+                        con
+                        básicos</strong></span></h2>
+            </div>
+
+            <div class="contenido2">
+                <h2> <span class="rosa"> <strong>TENDENCIAS</strong> </span> <span class="fino"><br>para esta <br>
+                        temporada 2025 </span>
+            </div>
+
+            <div class="contenido3">
+                <h2> <span class="rosa"> <strong>NUEVA GUÍA </strong> </span> <span class="fino"><br>
+                        Maquillaje</strong> <br> para
+                        verano</h2>
+            </div>
+
+
+            <div class="contenido-inferior">
+                <p>
+                    <span class="sub">¡Bienvenido</span><br>
+                    <span class="verano">verano!</span>
+                </p>
+            </div>
+
+        </div>
+        <a href="pagina1.html" class="flecha-derecha" onclick="pasarPagina('pagina2.html')">&#10148;</a>
+
+
+    </section>
+    <script>
+        function pasarPagina(destino) {
+            const revista = document.querySelector('.revista');
+            revista.classList.add('pasando');
+
+            setTimeout(() => {
+                window.location.href = destino;
+            }, 600); // espera la duración de la animación
+        }
+    </script>
+
+</body>
+
+</html>
